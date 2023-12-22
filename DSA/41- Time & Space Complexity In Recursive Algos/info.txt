@@ -1,0 +1,49 @@
+https://www.codingninjas.com/studio/guided-paths/competitive-programming/content/126222/offering/1476042 
+
+
+The master theorem is a powerful tool in the analysis of algorithms, specifically for analyzing **divide-and-conquer** algorithms. These algorithms work by recursively breaking down a problem into smaller subproblems, solving the subproblems, and then combining the solutions to get the answer to the original problem.
+
+The master theorem provides a way to analyze the **time complexity** of these algorithms, which tells us how much time it takes to run the algorithm as the input size increases.
+
+Here's the general form of a divide-and-conquer recurrence that the master theorem applies to:
+
+```
+T(n) = a * T(n/b) + f(n)
+```
+
+* `T(n)` is the time taken to solve a problem of size `n`.
+* `a` is the number of subproblems into which the problem is divided.
+* `b` is the factor by which the size of the subproblems is reduced (usually a power of 2).
+* `f(n)` is the cost of the work done outside the recursive calls, such as dividing the problem and combining the solutions.
+
+The master theorem tells us that the time complexity of this recurrence will be one of three cases, depending on the relationship between `a`, `b`, and the growth rate of `f(n)`:
+
+
+**Case 1:** `a > b^log_b a`
+
+In this case, the time complexity is dominated by the work done in the recursive calls. The solution is:
+T(n) = Θ(a^(log_b n))
+
+
+**Case 2:** `a = b^log_b a`
+
+In this case, the work done outside the recursive calls and the work done in the recursive calls are about the same. The solution is:
+T(n) = Θ(log_b n * f(n))
+
+
+**Case 3:** `a < b^log_b a`
+
+In this case, the work done outside the recursive calls dominates the time complexity. The solution is:
+
+```
+T(n) = Θ(f(n))
+```
+
+The master theorem is a powerful tool that can be used to quickly analyze the time complexity of many divide-and-conquer algorithms. It's important to note that the theorem only gives us an asymptotic bound, which means that it tells us the dominant term in the time complexity as the input size grows large.
+
+Here are some examples of divide-and-conquer algorithms that can be analyzed using the master theorem:
+
+* Merge sort
+* Quick sort
+* Binary search
+* Strassen's matrix multiplication
