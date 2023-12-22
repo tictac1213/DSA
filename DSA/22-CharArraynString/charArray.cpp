@@ -1,0 +1,1 @@
+// \0 null Character has ascii value 0

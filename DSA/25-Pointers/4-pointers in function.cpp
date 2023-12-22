@@ -1,0 +1,1 @@
+// Also when we pass arr[] in func basically its arr* if we do size of arr it give 8
