@@ -8,6 +8,8 @@
 		"#include<iostream>",
 		"using namespace std;",
 		"",
+		"$1",
+		"",
 		"int main()",
 		"{",
 		   "\t$0",
@@ -26,6 +28,8 @@
 	
 		"#include<bits/stdc++.h>",
 		"using namespace std;",
+		"",
+		"$1",
 		"",
 		"int main()",
 		"{",
