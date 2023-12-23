@@ -1,0 +1,27 @@
+In object-oriented programming (OOP), constructors are special methods used to initialize objects. They are automatically called when an object of a class is created. In C++, constructors have the same name as the class and do not have a return type. There are several types of constructors, each serving a different purpose:
+
+1. **No Constructors Declared:**
+   If no constructors are declared in a class, the compiler generates the default, copy, copy assignment, and destructor.
+
+2. **Default Constructor Declared:**
+   When a default constructor is explicitly declared, it is used to initialize the object with no arguments. The compiler generates the copy, copy assignment, and destructor.
+
+3. **Parameterized Constructor Declared:**
+   A parameterized constructor is declared with parameters to initialize the object with specific values. The compiler generates the copy, copy assignment, and destructor.
+
+4. **Copy Constructor or Copy Assignment Operator Declared:**
+   If a copy constructor or copy assignment operator is declared, the compiler generates the default constructor and copy assignment, but not the copy constructor.
+
+5. **Destructor Declared:**
+   When a destructor is declared, the compiler does not generate any other special member functions.
+
+These examples illustrate the different scenarios of constructor declaration and the corresponding compiler-generated special member functions[1].
+
+Understanding the types and purposes of constructors is essential for effectively initializing objects in C++ and other OOP languages. By grasping these concepts, you can better manage the initialization and state of objects within your programs.
+
+Citations:
+[1] https://www.geeksforgeeks.org/constructors-c/
+[2] https://www.programiz.com/cpp-programming/constructors
+[3] https://www.udacity.com/blog/2021/03/what-is-a-constructor-in-c.html
+[4] https://learn.microsoft.com/en-us/cpp/cpp/constructors-cpp?view=msvc-170
+[5] https://www.w3schools.com/cpp/cpp_constructors.asp
