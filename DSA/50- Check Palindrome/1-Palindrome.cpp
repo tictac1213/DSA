@@ -1,6 +1,7 @@
 // https://practice.geeksforgeeks.org/problems/check-if-linked-list-is-pallindrome/1
 
 
+
 // O(n)  O(n) Approach 1 copy all elements on LL in array 
 // O(n)  O(1) Approach 2 Find mid and reverse the part after mid and compare 2 parts
 
@@ -20,20 +21,6 @@ struct Node {
   }
 };
 
-
-
-
-// } Driver Code Ends
-/*
-struct Node {
-  int data;
-  struct Node *next;
-  Node(int x) {
-    data = x;
-    next = NULL;
-  }
-};
-*/
 
 class Solution{
   public:
