@@ -1,4 +1,4 @@
-//{ Driver Code Starts
+// !{ Driver Code Starts
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -26,30 +26,27 @@ class Solution{
     //the complete circle without exhausting its petrol in between.
     int tour(petrolPump p[],int n)
     {
-       vector<bool> flag(n);
-       int start = 0;
+       int strt = 0;
+       int deficit = 0;
        int pe = 0;
-       for (int i = 0; i < n ; i++)
-       {
-            pe+=p[i].petrol;
-            if (pe > p[i].distance)
-            {
-                
-            }
-            else{
-                start = i+1;
-                pe = 0;
-            }
-            if (p[i].petrol > p[i].distance)
-            {
-                flag[i] = true;
-            }
-            else{
-                flag[i] = false;
-            }
+       for(int i =0; i < n; i++){
+           pe += (p[i].petrol - p[i].distance);
+           
+           if(pe < 0){
+               deficit += pe;
+               strt = i+1;
+               pe = 0;
+           }
+           
+    //   cout << deficit << " " << pe << strt << endl;
+          
        }
        
-
+       if( deficit + pe >= 0 ){
+           return strt;
+       }
+       
+       return -1;
     }
 };
 
