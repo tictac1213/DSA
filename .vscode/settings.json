@@ -13,7 +13,8 @@
     "span": "c",
     "cstdlib": "cpp",
     "bitset": "cpp",
-    "algorithm": "cpp"
+    "algorithm": "cpp",
+    "vector": "cpp"
   },
   "C_Cpp.errorSquiggles": "enabled",
   "C_Cpp_Runner.cCompilerPath": "gcc",
