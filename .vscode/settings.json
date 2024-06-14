@@ -14,7 +14,9 @@
     "cstdlib": "cpp",
     "bitset": "cpp",
     "algorithm": "cpp",
-    "vector": "cpp"
+    "vector": "cpp",
+    "source_location": "cpp",
+    "stacktrace": "cpp"
   },
   "C_Cpp.errorSquiggles": "enabled",
   "C_Cpp_Runner.cCompilerPath": "gcc",
